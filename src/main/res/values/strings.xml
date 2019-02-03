@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Custom RecyclerView</string>
+    <string name="dofirst">Do First</string>
+    <string name="dolater">Do Later</string>
+    <string name="delegate">Delegate</string>
+    <string name="eliminate">Eliminate</string>
+</resources>

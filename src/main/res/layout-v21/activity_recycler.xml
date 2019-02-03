@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclerActivity"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:isScrollContainer="true"
+    android:background="@color/year">
+
+    <RelativeLayout
+        style="@style/LL">
+
+        <RelativeLayout
+            android:id="@+id/rL1"
+            style="@style/rL"
+            android:background="@drawable/roundcorners"
+            android:backgroundTint="#64dd17">
+
+            <TextView
+                android:id="@+id/tit1"
+                style="@style/title"
+                android:text="@string/dofirst"
+                />
+
+            <TextView
+                android:id="@+id/size1"
+                style="@style/size"
+                android:background="@drawable/roundcorners"
+                android:backgroundTint="#558b2f"
+                />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv1"
+            style="@style/RCV"
+            android:layout_marginTop="50sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/LL">
+
+        <RelativeLayout
+            android:id="@+id/rL2"
+            style="@style/rL"
+            android:background="@drawable/roundcorners"
+            android:backgroundTint="#0091ea"
+            >
+            <TextView
+                android:id="@+id/tit2"
+                style="@style/title"
+                android:text="@string/dolater"/>
+
+            <TextView
+                android:id="@+id/size2"
+                style="@style/size"
+                android:text="0"
+                android:background="@drawable/roundcorners"
+                android:backgroundTint="#0277bd"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv2"
+            style="@style/RCV"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/LL">
+
+        <RelativeLayout
+            android:id="@+id/rL3"
+            style="@style/rL"
+            android:background="@drawable/roundcorners"
+            android:backgroundTint="#ff9100"
+            >
+            <TextView
+                android:id="@+id/tit3"
+                style="@style/title"
+                android:text="@string/delegate"/>
+
+            <TextView
+                android:id="@+id/size3"
+                style="@style/size"
+                android:text="4"
+                android:background="@drawable/roundcorners"
+                android:backgroundTint="#e65100"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv3"
+            style="@style/RCV"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/LL">
+
+        <RelativeLayout
+            android:id="@+id/rL4"
+            style="@style/rL"
+            android:background="@drawable/roundcorners"
+            android:backgroundTint="#f44336"
+            >
+            <TextView
+                android:id="@+id/tit4"
+                style="@style/title"
+                android:text="@string/eliminate"/>
+
+            <TextView
+                android:id="@+id/size4"
+                style="@style/size"
+                android:text="0"
+                android:background="@drawable/roundcorners"
+                android:backgroundTint="#d50000"
+                />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv4"
+            style="@style/RCV"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
