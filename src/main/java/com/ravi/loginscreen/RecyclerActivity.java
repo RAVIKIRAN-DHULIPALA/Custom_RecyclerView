@@ -30,16 +30,13 @@ public class RecyclerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recycler);
         l1.add("ufuf");
 
-        l2.add("ghj");
 
         l3.add("ehshd");
         l3.add("vdve");
         l3.add("gegs");
         l3.add("ehshd");
         l3.add("vdve");
-
-        l4.add("lkjh");
-
+        
         r1 = findViewById(R.id.rcv1);
         r2 = findViewById(R.id.rcv2);
         r3 = findViewById(R.id.rcv3);
@@ -54,7 +51,9 @@ public class RecyclerActivity extends AppCompatActivity {
         r1.addOnItemTouchListener(new RecyclerItemClickListener(RecyclerActivity.this,r1, new RecyclerItemClickListener.ClickListener() {
             @Override
             public void onClick(View view, int position) {
-                Toast.makeText(RecyclerActivity.this,l1.get(position),Toast.LENGTH_SHORT).show();
+                if (l1.size() > 0) {
+                    Toast.makeText(RecyclerActivity.this, l1.get(position), Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override
@@ -71,7 +70,9 @@ public class RecyclerActivity extends AppCompatActivity {
         r2.addOnItemTouchListener(new RecyclerItemClickListener(RecyclerActivity.this,r1, new RecyclerItemClickListener.ClickListener() {
             @Override
             public void onClick(View view, int position) {
-                Toast.makeText(RecyclerActivity.this,l2.get(position),Toast.LENGTH_SHORT).show();
+                if (l2.size() > 0) {
+                    Toast.makeText(RecyclerActivity.this, l2.get(position), Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override
@@ -89,7 +90,9 @@ public class RecyclerActivity extends AppCompatActivity {
         r3.addOnItemTouchListener(new RecyclerItemClickListener(RecyclerActivity.this,r1, new RecyclerItemClickListener.ClickListener() {
             @Override
             public void onClick(View view, int position) {
-                Toast.makeText(RecyclerActivity.this,l3.get(position),Toast.LENGTH_SHORT).show();
+                if (l3.size() > 0) {
+                    Toast.makeText(RecyclerActivity.this, l3.get(position), Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override
@@ -107,7 +110,9 @@ public class RecyclerActivity extends AppCompatActivity {
         r4.addOnItemTouchListener(new RecyclerItemClickListener(RecyclerActivity.this,r1, new RecyclerItemClickListener.ClickListener() {
             @Override
             public void onClick(View view, int position) {
-                Toast.makeText(RecyclerActivity.this,l4.get(position),Toast.LENGTH_SHORT).show();
+                if (l4.size() > 0) {
+                    Toast.makeText(RecyclerActivity.this, l4.get(position), Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override
